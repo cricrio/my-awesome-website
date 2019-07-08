@@ -1,0 +1,39 @@
+.outer {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: black;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.profil {
+  color: white;
+  height: 250px;
+}
+
+.name {
+  font-size: 3rem;
+  justify-content: space-between;
+}
+
+.job-title {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.job-title::first-letter {
+  background-color: white;
+  color: black;
+  padding: 0.8rem 0.2rem;
+  margin-right: 0.02rem;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
