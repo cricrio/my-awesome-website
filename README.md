@@ -7,7 +7,7 @@
 <h1 align="center">
   Christopher Bellanger Awesome Web Site made with Gatsby
 </h1>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3450fbcf-ea18-4103-abdd-4128288c96ab/deploy-status)](https://app.netlify.com/sites/christopherbellanger/deploys)
+
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
