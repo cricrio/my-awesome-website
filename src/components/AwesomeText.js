@@ -4,7 +4,6 @@ import styled from "styled-components"
 const Text = styled.h2`
   margin: 2rem 0;
   font-size: 2.5rem;
-
   &:first-letter {
     background-color: white;
     color: black;
@@ -36,5 +35,5 @@ export const AwesomeText = ({ text, next }) => {
     next()
   }
   const renderedText = text.substring(0, indexLetter)
-  return <Text>{renderedText || <br />}</Text>
+  return <Text>I am {renderedText || <br />}</Text>
 }

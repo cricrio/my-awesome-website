@@ -10,8 +10,8 @@ export const Presentation = () => (
       <Name className="name">Christopher Bellanger</Name>
       <Carousel>
         <AwesomeText text={"Human"} />
-        <AwesomeText text={"Maker"} />
-        <AwesomeText text={"Comedian"} />
+        <AwesomeText text={"a Maker"} />
+        <AwesomeText text={"a Comedian"} />
       </Carousel>
       <SocialLinks className="social-links">
         <SocialLink href="https://www.linkedin.com/in/christopher-bellanger-074817117/">
@@ -31,6 +31,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
 `
 
 const Profil = styled.section`
@@ -45,6 +46,6 @@ const Name = styled.h1`
 
 const SocialLinks = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 1.5rem;
 `
