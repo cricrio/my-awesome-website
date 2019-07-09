@@ -3,6 +3,7 @@ import "./index.css"
 
 import { AwesomeText } from "../components/AwesomeText"
 import { Carousel } from "../components/Carousel"
+import { SocialLink } from "../components/SocialLink"
 
 const IndexPage = () => (
   <div className="outer">
@@ -15,10 +16,15 @@ const IndexPage = () => (
           <AwesomeText text={"Comedian"} />
         </Carousel>
         <div className="social-links">
-          <span>LinkedIn</span>
-          <span>Github</span>
-          <span>Twitter</span>
-          <span>Codepen</span>
+          <SocialLink
+            href="https://www.linkedin.com/in/christopher-bellanger-074817117/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            LinkedIn
+          </SocialLink>
+          <SocialLink href="https://github.com/cricrio">Github</SocialLink>
+          <SocialLink href="https://twitter.com/_cricrio_">Twitter</SocialLink>
         </div>
       </div>
     </div>

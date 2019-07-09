@@ -18,6 +18,12 @@ const Text = styled.h2`
  */
 export const AwesomeText = ({ text, next }) => {
   const [indexLetter, setIndexLetter] = useState(1)
+  /*
+   * Maybe unsafe: this only work  because  next() is called when the text is fully displayed
+   */
+  /*
+   *Accebility problem, should be done with css aniamation
+   */
 
   useEffect(() => {
     const id = setInterval(() => {
