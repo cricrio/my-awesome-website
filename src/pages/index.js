@@ -16,11 +16,7 @@ const IndexPage = () => (
           <AwesomeText text={"Comedian"} />
         </Carousel>
         <div className="social-links">
-          <SocialLink
-            href="https://www.linkedin.com/in/christopher-bellanger-074817117/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <SocialLink href="https://www.linkedin.com/in/christopher-bellanger-074817117/">
             LinkedIn
           </SocialLink>
           <SocialLink href="https://github.com/cricrio">Github</SocialLink>
