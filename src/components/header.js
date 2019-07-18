@@ -1,42 +1,32 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import styled from "styled-components"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+  <Heady>
+    <Name>
+      <Link
+        to="/"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}
+      >
+        Christopher Bellanger
+      </Link>
+    </Name>
+  </Heady>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Heady = styled.header`
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+`
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+const Name = styled.h2`
+  margin: 1rem;
+`
 
 export default Header

@@ -5,6 +5,7 @@ const Link = styled.a`
   text-decoration: none;
   color: white;
   position: relative;
+  fill: currentColor;
 
   &:before {
     content: " ";
