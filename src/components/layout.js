@@ -33,11 +33,12 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: "2rem",
-          heightMin: "100vh",
+          height: "100vh",
         }}
       >
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }
