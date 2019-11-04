@@ -11,8 +11,8 @@ export const Presentation = () => (
     <BgImage />
     <Container className="presentation">
       <Profil className="profil">
-        <Name className="name">Christopher Bellanger</Name>
-        <Carousel>
+        <Name className="name special-font">Christopher Bellanger</Name>
+        <Carousel className="special-font">
           <AwesomeText text={"Human"} />
           <AwesomeText text={"a Maker"} />
           <AwesomeText text={"a Comedian"} />

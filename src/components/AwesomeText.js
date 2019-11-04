@@ -4,9 +4,10 @@ import styled from "styled-components"
 const Text = styled.h2`
   margin: 2rem 0;
   font-size: 2.5rem;
+
   &:first-letter {
     background-color: white;
-    color: black;
+    color: rgba(0, 0, 0, 0.6);
     padding: 0.8rem 0.2rem;
     margin-right: 0.02rem;
   }
@@ -15,7 +16,7 @@ const Text = styled.h2`
  *
  * Display the text letter by letter
  */
-export const AwesomeText = ({ text, next }) => {
+export const AwesomeText = ({ text, next, className }) => {
   const [indexLetter, setIndexLetter] = useState(1)
   /*
    * Maybe unsafe: this only work  because  next() is called when the text is fully displayed
@@ -35,5 +36,5 @@ export const AwesomeText = ({ text, next }) => {
     next()
   }
   const renderedText = text.substring(0, indexLetter)
-  return <Text>I am {renderedText || <br />}</Text>
+  return <Text className={className}>I am {renderedText || <br />}</Text>
 }
